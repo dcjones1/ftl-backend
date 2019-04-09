@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 2019_04_05_151323) do
   create_table "levels", force: :cascade do |t|
     t.text "story"
     t.string "choices"
-    t.integer "consequence"
+    t.string "consequence"
     t.bigint "game_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -97,7 +97,6 @@ ActiveRecord::Schema.define(version: 2019_04_05_151323) do
 
   create_table "weapons", force: :cascade do |t|
     t.string "name"
-    t.string "type"
     t.integer "shots"
     t.integer "effect"
     t.datetime "created_at", null: false

@@ -3,7 +3,7 @@ class CreateLevels < ActiveRecord::Migration[5.2]
     create_table :levels do |t|
       t.text :story
       t.string :choices
-      t.integer :consequence
+      t.string :consequence
       t.references :game, index: true
 
       t.timestamps

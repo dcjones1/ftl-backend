@@ -4,6 +4,9 @@ Rails.application.routes.draw do
       resources :games
       resources :levels
       resources :players
+      resources :ships
+      resources :crew
+      resources :weapons
     end
   end
 end
