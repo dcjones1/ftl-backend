@@ -1,3 +1,3 @@
 class LevelSerializer < ActiveModel::Serializer
-  attributes :id, :story, :choices, :consequence
+  attributes :id, :title, :story, :choices, :consequence
 end

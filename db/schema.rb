@@ -62,9 +62,10 @@ ActiveRecord::Schema.define(version: 2019_04_05_151323) do
   end
 
   create_table "levels", force: :cascade do |t|
+    t.string "title"
     t.text "story"
-    t.string "choices"
-    t.string "consequence"
+    t.text "choices", array: true
+    t.text "consequence", array: true
     t.bigint "game_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
