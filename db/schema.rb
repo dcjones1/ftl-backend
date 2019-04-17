@@ -90,6 +90,9 @@ ActiveRecord::Schema.define(version: 2019_04_05_151323) do
   create_table "ships", force: :cascade do |t|
     t.string "name"
     t.integer "health"
+    t.integer "pilotLevel"
+    t.integer "engineLevel"
+    t.integer "shields"
     t.bigint "player_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

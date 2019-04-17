@@ -2,7 +2,7 @@ class Api::V1::LevelsController < ApplicationController
   before_action :find_level, only: :show
 
   def index
-    render json: Level.all
+    render json: Level.all, include: ['ships', 'ships.weapons']
   end
 
   def show
