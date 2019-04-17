@@ -6,7 +6,7 @@ class Api::V1::LevelsController < ApplicationController
   end
 
   def show
-    render json: @level
+    render json: @level, include: ['ships', 'ships.weapons']
   end
 
   private
