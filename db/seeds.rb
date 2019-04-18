@@ -41,7 +41,7 @@ level2 = Level.create(
 )
 
 
-ship3 = Ship.create(name: 'enemy', health: '18', pilotLevel: 1, engineLevel: 2, shields: 2)
+ship3 = Ship.create(name: 'enemy', health: '18', pilotLevel: 2, engineLevel: 2, shields: 2)
 weap3 = Weapon.create(name: 'laser', shots: '2', effect: 'none')
 weap31 = Weapon.create(name: 'missile', shots: '1', effect: 'none')
 level3 = Level.create(
@@ -53,26 +53,26 @@ level3 = Level.create(
 )
 
 
-ship4 = Ship.create(name: 'enemy', health: '18', pilotLevel: 2, engineLevel: 2, shields: 2)
+ship4 = Ship.create(name: 'enemy', health: '18', pilotLevel: 2, engineLevel: 3, shields: 3)
 weap4 = Weapon.create(name: 'laser', shots: '3', effect: 'none')
 weap41 = Weapon.create(name: 'missile', shots: '1', effect: 'none')
 level4 = Level.create(
-  title: 'Level 4',
-  story: 'A pirate vessel appears to be looting a disabled ship ahead. As you approach, you see they have the crew from the other ship held hostage.',
-  choices: ['Attack the crew and try to save the hostages.', 'Attack without regard for the hostages.', 'Mind your own business.'],
-  consequence: ['You succeed in saving them. The grateful crew offers their help and remaining resources', 'They turn and attack. You are outgunned and make a hasty retreat, but not before taking damage.', 'You continue your journey.'],
+  title: 'Merchant',
+  story: 'Your ship stumbles across a merchant ship.',
+  choices: ['Purchase goods from them.', 'Attack them.', 'Move along.'],
+  consequence: ['Thankful for your business, they offer some free repairs.', 'An unwise decision. Why would a merchant not be well armed?', 'You continue your journey.'],
   game: game1
 )
 
 
-ship5 = Ship.create(name: 'enemy', health: '30', pilotLevel: 3, engineLevel: 3, shields: 3)
-weap5 = Weapon.create(name: 'laser', shots: '4', effect: 'none')
+ship5 = Ship.create(name: 'enemy', health: '22', pilotLevel: 4, engineLevel: 4, shields: 3)
+weap5 = Weapon.create(name: 'laser', shots: '5', effect: 'none')
 weap51 = Weapon.create(name: 'missile', shots: '3', effect: 'none')
 level5 = Level.create(
-  title: 'Level 5',
-  story: 'A pirate vessel appears to be looting a disabled ship ahead. As you approach, you see they have the crew from the other ship held hostage.',
-  choices: ['Attack the crew and try to save the hostages.', 'Attack without regard for the hostages.', 'Mind your own business.'],
-  consequence: ['You succeed in saving them. The grateful crew offers their help and remaining resources', 'They turn and attack. You are outgunned and make a hasty retreat, but not before taking damage.', 'You continue your journey.'],
+  title: 'The Final Frontier',
+  story: 'Looming in the distance, an enormous enemy ship approaches.',
+  choices: ['Take the first shot before they see you.', 'Hope they take no notice of you.', 'Try to run.'],
+  consequence: ['You surprise them and get in some early damage.', 'Upon finding your ship, the enemy attacks.', 'The enemy ship chases and engages you.'],
   game: game1
 )
 
